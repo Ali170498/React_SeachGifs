@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100,300,400,700,900&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #333;
+  color: #fff;
+}
+
+.realizado-por {
+  position: absolute;
+  top: 10px; 
+  left: 10px; 
+  color: #878787; 
+  font-size: 16px;
+}
+
+
+.AddCategory {
+  text-align: center;
+  padding: 20px;
+  background-color: #000000d4; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes colorChange {
+  0% { background-image: linear-gradient(to right, #6b6eff, #ff6b6b); }
+  100% { background-image: linear-gradient(to right, #ff6b6b, #6b6eff); }
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: transparent;
+  animation: colorChange 5s infinite linear;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: font-size 0.5s ease;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] {
+  font-size: inherit;
+  padding: 12px 20px;
+  outline: none;
+  border: solid 0px #000;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.error {
+  color: red;
+  
+}
+.App {
+  text-align: center;
+  margin-top: 6%;
+}
+.container-gifs {
+  display: flex;
+  gap: 16px;
+flex-wrap: wrap;
+margin-top: 4% !important;
+justify-content: center;
+padding: 0 5%;
+grid-template-columns: repeat(4, 1fr);
+}
+.container-gifs div img{
+  border-radius: 18px;
+  box-shadow: rgba(0,0,0,0.25)0px 14px 28px, rgba(0,0,0, 0.22) 0px 10px 10px;
+}
